@@ -1,0 +1,52 @@
+*{
+    margin:0px 0px 0px 0px;
+    /* padding:0px 0px 0px 0px; */
+    border:0px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#Navigation{
+    display:flex;
+    background-color: rgb(245, 248, 248);
+}
+#menu{
+    margin:10px 900px 10px 40px;
+    cursor: pointer;
+}
+#menusopts ul{
+    display: flex;
+    margin:10px 10px 10px 10px;
+}
+#menusopts li{
+    margin:0px 20px 0px 20px;
+    list-style: none;
+    cursor: pointer;
+}
+li a{
+    text-decoration: none;
+    color:rgb(127, 126, 126);
+}
+.t1{
+    font-weight: bold;
+}
+.summary{
+    font-weight:bold;
+}
+.content{
+    font-weight:bold;
+}
+#body{
+    padding:10px 10px 10px 10px;
+}
+#cont li{
+     color:rgb(124, 123, 123);
+     /* margin-left: 50px; */
+}
+#blogsbody{
+    margin:20px 0px 10px 20px;
+}
+#contactbody{
+    display: flex;
+}
+#contactbody div{
+    margin:10px 10px 10px 10px;
+}
