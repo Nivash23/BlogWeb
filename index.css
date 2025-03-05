@@ -4,12 +4,14 @@
     border:0px 0px 0px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #Navigation{
     display:flex;
-    background-color: rgb(245, 248, 248);
+    background-color: rgb(145, 150, 150);
+    width:100%;
 }
 #menu{
-    margin:10px 900px 10px 40px;
+    margin:10px 500px 10px 40px;
     cursor: pointer;
 }
 #menusopts ul{
@@ -23,7 +25,7 @@
 }
 li a{
     text-decoration: none;
-    color:rgb(127, 126, 126);
+    color:rgb(92, 92, 92);
 }
 .t1{
     font-weight: bold;
@@ -36,17 +38,217 @@ li a{
 }
 #body{
     padding:10px 10px 10px 10px;
+    color: whitesmoke;
 }
 #cont li{
      color:rgb(124, 123, 123);
      /* margin-left: 50px; */
 }
+#blogbodycontain{
+    width:900px;
+    height:400px;
+    padding:10px;
+    margin:20px 0px 10px 0px;
+}
 #blogsbody{
-    margin:20px 0px 10px 20px;
+    margin:10px 0px 20px 20px;
+    transition-duration: 0.8s;
+    border:2px solid rgb(130, 129, 129);
+    width:800px;
+    height:350px;
+    padding:10px;
+    
+}
+#blogsbody:hover{
+    box-shadow: 5px 5px 40px rgb(172, 172, 172);
+    margin-top: -0.005px;
+    #blogimg img{
+    transform: rotate(360deg);
+}
+
+
 }
 #contactbody{
     display: flex;
 }
 #contactbody div{
-    margin:10px 10px 10px 10px;
+    margin:10px 10px 10px 100px;
 }
+#blogimg img{
+    transition-duration: 6s;
+    margin:20px 0px 10px 10px;
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+}
+
+#backgrounddesign{
+    width:100%;
+    height:100%;
+    margin-top: -50px;
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    transition-duration: 4s;
+
+}
+#bcircle{
+    width:140px;
+    height:140px;
+    background-color: rgb(64, 202, 156);
+    position: absolute;
+    margin:300px 0px 0px 700px;
+    border-radius:140px ;
+    opacity: 0.2;
+    animation:rotating 2s infinite;
+    color: azure;
+    text-align: center;
+}
+#sq1{
+   background:radial-gradient(blue,pink,red,violet,black,yellow); 
+   width:100%;
+   height:360px;
+   border-bottom-right-radius: 140px;
+   /* border-bottom-left-radius: 140px;
+   border-top-right-radius: 140px;
+   border-top-left-radius: 140px; */
+   /* border-radius: 50%; */
+   opacity: 0.2;
+   animation:shaking 3s infinite;
+}
+#sq2{
+   background:linear-gradient(1turn,black,rgba(224, 11, 235, 0.919)); 
+   width:100%;
+   height:100%;
+   border-bottom-left-radius: 120px;
+   opacity: 0.3;
+}
+#sq3{
+   background:linear-gradient(0.50turn,black,rgba(224, 11, 235, 0.919)); 
+   width:100%;
+   height:370px;
+   border-top-right-radius: 190px;
+   opacity: 0.1;
+}
+#sq4{
+    background:linear-gradient(0.50turn,black,rgba(245, 3, 19, 0.919)); 
+    opacity: 0.2;
+   width:100%;
+   height:100%;
+   border-top-left-radius: 120px;
+}
+#aboutcontain #description{
+    width:800px;
+    height:150px;
+    /* background-color: rgb(60, 60, 60); */
+    /* opacity: 0.1; */
+    background-color: black;
+    margin:20px 0px 20px 40px;
+    padding:10px 10px 10px 10px;
+    animation:border 3s infinite;
+}
+#formcontain{
+    width:370px;
+    height:250px;
+    background-color: blueviolet;
+    opacity: 0.4;
+    text-align: center;
+    padding:20px;
+    margin:20px 0px 10px 50px;
+    border-radius: 10px;
+}
+#formcontain div{
+    margin:10px 0px 10px 10px;
+}
+#email{
+    width:200px;
+    height:30px;
+    margin-left: 10px;
+    outline: none;
+}
+#msg{
+    width:200px;
+    height:80px;
+    margin:20px 0px 10px 10px;
+    outline: none;
+}
+#sendbut{
+    color:white;
+    background-color:blue;
+    padding:5px;
+    opacity: 1;
+}
+@keyframes shaking
+{
+    0%{
+        padding-top: 20px;
+    }
+    25%{
+        padding-top: 10px;
+        background:radial-gradient(pink,blue,red,yellow,violet,black);
+        opacity: 0.1;
+    }
+    50%{
+        padding-bottom: 20px;
+    }
+    75%{
+        padding-bottom: 10px;
+       background:radial-gradient(blue,pink,red,violet,black,yellow); 
+    }
+    100%{
+        padding-bottom: 0px;
+    }
+}
+@keyframes border
+{
+    0%{
+        border-left: 3px solid violet;
+        border-top: 3px solid blue;
+    }
+    
+    50%{
+        border-right: 3px solid blue;
+        border-bottom: 3px solid violet;
+    }
+    100%{
+        border-right: 3px solid blue;
+        border-bottom: 3px solid violet;
+    }
+}
+@keyframes rotating
+{
+    0%{
+        transform: rotate(12deg);
+    }
+    25%{
+       transform: rotate(80deg);
+       /* background-color: blue; */
+    }
+    50%{
+        transform: rotate(160deg);
+    }
+    75%{
+       transform: rotate(240deg); 
+    }
+    100%{
+       transform: rotate(360deg);
+    }
+}
+@media (max-width:1200px)
+{
+    #menu{
+        margin-right: 200px;
+    }
+}
+@media (min-width:250px)and(max-width:600px)
+{
+    #blogsbody{
+        width:400px;
+    }
+    #menu{
+        margin-right: 200px;
+    }
+}
+

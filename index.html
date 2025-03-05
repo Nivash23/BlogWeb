@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <div>
+    <div id="container">
         <div id="Navigation">
           <div id="menu" >Menu</div>  
           <div id="menusopts">
@@ -18,38 +18,69 @@
             </ul>
           </div>  
         </div>
+        <div id="backgrounddesign">
+          <div id="sq1"></div>
+          <div id="sq2"></div>
+          <div id="sq3"></div>
+          <div id="sq4"></div>
+          <div id="bcircle">BLOG</div>
+        </div>
            <div id="body">
              <div>
                <h2>BLOG POSTS:</h2>
-               <div id="blogsbody">
+               <div id="blogbodycontain">
 
-                 <p><span class="t1">Title : </span>Web Development</p>
-                 <p><span class="summary">Summary : </span>Web development is the most trending and demand field Now the all people and industries mostly communicate by using this websites</p>
-                 <p><span class="content">Content : </span></p>
-                 <div id="cont">
+                 <div id="blogsbody">
   
-                   <ul>
-                    <li >Web developments are divided into two parts as Frontend and Backend Development.</li>
-                    <li>This Field is a very interesting and the codings will be as easily understandable for everyone.</li>
-                    <li>For Frontend we will use HTML,CSS,Javascript,ReactJS.</li>
-                    <li>For Backend We will use ExpressJs,MongoDB.</li>
-                    <li>For Frontend Most of the developers will use reactjs to Reduce the code complexity.. </li>
-                   </ul>
-                 </div>
-
-                 <div>
-                  <img src="data:image/png;base64,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"/>
+                   <p><span class="t1">Title : </span>Web Development</p>
+                   <p><span class="summary">Summary : </span>Web development is the most trending and demand field Now the all people and industries mostly communicate by using this websites</p>
+                   <p><span class="content">Content : </span></p>
+                   <div id="cont">
+    
+                     <ul>
+                      <li >Web developments are divided into two parts as Frontend and Backend Development.</li>
+                      <li>This Field is a very interesting and the codings will be as easily understandable for everyone.</li>
+                      <li>For Frontend we will use HTML,CSS,Javascript,ReactJS.</li>
+                      <li>For Backend We will use ExpressJs,MongoDB.</li>
+                      <li>For Frontend Most of the developers will use reactjs to Reduce the code complexity.. </li>
+                     </ul>
+                   </div>
+  
+                   <div id="blogimg">
+                    <img  src="data:image/png;base64,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"/>
+                   </div>
                  </div>
                </div>
+               <div id="aboutcontain">
 
-               <h2>ABOUT ME :</h2>
+                 <h2>ABOUT ME :</h2>
+                 <div id="description">
+                  <p>Hi,My Name Nivash I am Studying in karpagam college of engineering in coimbatore.I am pursuing in B.E computer science and engineering My Technical skills C, java, html, css, javascript, Reactjs, Mongodb, Nodejs, expressjs and then My personal skills are Teamwork, Time Management, Strong Communication. My Shortterm goal is a Fullstack Development and then longterm goal is a software engineer and then My interests are in creating a websites and learning a new Technologies..</p>
+                 </div>
+               </div>
                <div>
-                <p>Hi,My Name Nivash I am Studying in karpagam college of engineering in coimbatore.I am pursuing in B.E computer science and engineering My Technical skills C, java, html, css, javascript, Reactjs, Mongodb, Nodejs, expressjs and then My personal skills are Teamwork, Time Management, Strong Communication. My Shortterm goal is a Fullstack Development and then longterm goal is a software engineer and then My interests are in creating a websites and learning a new Technologies..</p>
-               </div>
-               <h2>CONTACT : </h2>
-               <div id="contactbody">
-                <div><ion-icon name="call"></ion-icon>9360154633</div>
-                <div><a href="https://www.linkedin.com/in/nivash-r-845a61269/"><ion-icon name="logo-linkedin"></ion-icon></a></div>
+
+                 <h2>CONTACT : </h2>
+                 <div id="formcontain">
+                  <form action="">
+                    <div>
+                      <label for="email">Email</label>
+                      <input id="email" type="email" name="useremail" placeholder="Enter your Email.." />
+                    </div>
+                    <div>
+
+                      <label for="msg">Message</label>
+                      <textarea id="msg" name="msgbox" placeholder="Enter the Message.."></textarea>
+                    </div>
+                    <div>
+                      <button id="sendbut" type="submit">Send</button>
+                    </div>
+                  </form>
+                 </div>
+                 <div id="contactbody">
+                  <div><ion-icon name="call"></ion-icon>9360154633</div>
+                  <div><a href="https://www.linkedin.com/in/nivash-r-845a61269/"><ion-icon name="logo-linkedin"></ion-icon></a></div>
+                 </div>
                </div>
              </div>
            </div>
